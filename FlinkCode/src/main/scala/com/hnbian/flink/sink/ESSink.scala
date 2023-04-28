@@ -24,11 +24,11 @@ object ESSink {
     val env = StreamExecutionEnvironment.getExecutionEnvironment
     env.setParallelism(1)
 
-    val stream = env.readTextFile("/opt/apache-maven-3.6.0/conf/settings.xml")
+    val stream = env.readTextFile("D:\\hnbian\\FlinkCodes\\pom.xml")
 
     val httpHosts = new util.ArrayList[HttpHost]()
 
-    httpHosts.add(new HttpHost("node1",9200))
+    httpHosts.add(new HttpHost("10.24.5.37",9200))
 
     // 创建 es sink 的 builder
     val esSinkBuilder  = new ElasticsearchSink.Builder[String](

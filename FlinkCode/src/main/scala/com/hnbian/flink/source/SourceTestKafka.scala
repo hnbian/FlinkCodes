@@ -19,9 +19,9 @@ object SourceTestKafka {
 
     val properties = new Properties()
 
-    val topic = "text"
+    val topic = "test1"
 
-    properties.setProperty("bootstrap.servers","node1:9092")
+    properties.setProperty("bootstrap.servers","10.24.5.37:6667,10.24.5.38:6667,10.24.5.39:6667")
 
     properties.setProperty("group.id","consumer-group1")
     properties.setProperty("key.deserializer","org.apache.kafka.common.serialization.StringDeserializer")

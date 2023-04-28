@@ -17,11 +17,17 @@ object StreamWordCount {
 
   def main(args: Array[String]): Unit = {
     //--host localhost --port 8888
-    val parameters = ParameterTool.fromArgs(args)
+//    val parameters = ParameterTool.fromArgs(args)
+//
+//    val host = parameters.get("host")
+//
+//    val port = parameters.getInt("port")
 
-    val host = parameters.get("host")
+//    val parameters = ParameterTool.fromArgs(args)
 
-    val port = parameters.getInt("port")
+    val host = "10.24.5.200"
+
+    val port = 8888
     println(s"host:$host")
     println(s"port:$port")
 
